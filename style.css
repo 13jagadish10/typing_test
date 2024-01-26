@@ -167,3 +167,17 @@ code{
         transform: scale(2);
     }
 }
+@media (max-width: 450px) {
+    .item h1{
+        font-size: 17px ; 
+        white-space: nowrap;
+        position: absolute; 
+
+    }
+    h3.link.mode{
+        font-size: 14px;
+}
+.item.flex{
+    justify-content: flex-end;  
+} 
+}
