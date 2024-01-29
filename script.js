@@ -72,6 +72,7 @@ const start_test = (mode) => {
     let min = 0
     let sec = 0
     let msec = 0
+    document.getElementById("typed").focus()
     timerid = setInterval(() => {
         msec += 100;
         time_taken += 100;
