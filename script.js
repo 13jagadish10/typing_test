@@ -94,11 +94,11 @@ const start_test = (mode) => {
         selected.map((e) => { container.innerHTML += `<z>${e}</z> ` })
     } else if (mode === 'hard') {
         container.innerHTML = "";
-        const selected = hard[Math.ceil(Math.random() * hard.length - 1)].split(" ");
+        selected = hard[Math.ceil(Math.random() * hard.length - 1)].split(" ");
         selected.map((e) => { container.innerHTML += `<z>${e}</z> ` })
     } else if (mode === 'harder') {
         container.innerHTML = "";
-        const selected = harder[Math.ceil(Math.random() * harder.length - 1)].split(" ");
+        selected = harder[Math.ceil(Math.random() * harder.length - 1)].split(" ");
         selected.map((e) => { container.innerHTML += `<z>${e}</z> ` })
     }
 
