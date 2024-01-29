@@ -120,22 +120,7 @@ header{
 .m2{
     margin: 10px 0px;
 }
-footer{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; 
-    margin: 15px;
 
-}
-footer div{
-    padding: 5px; 
-
-}
-code{
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-} 
 .green{
     color: rgb(138, 255, 138);
 }
@@ -150,6 +135,8 @@ code{
 #counter{
     animation: ctr 1s infinite ;
 }
+
+
 @keyframes ctr {
     0%{
         transform: scale(1);
@@ -167,6 +154,31 @@ code{
         transform: scale(2);
     }
 }
+
+
+footer{ 
+    background-color: rgb(24, 24, 24);
+    color: rgb(214, 214, 214);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+    flex-wrap: wrap;
+  }
+  footer div{
+    text-align: center;
+  
+  }
+  code{
+    color: white; 
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  code:hover{
+    border-bottom: 1px solid white;
+  }
+
 @media (max-width: 450px) {
     .item h1{
         font-size: 17px ; 
