@@ -41,9 +41,11 @@ header{
     cursor: pointer;
 }
 .link:hover{ 
+    border-bottom: 2px solid white;
     color: rgb(125, 125, 255);
     transform: scale(0.98);
-    transition: 0.3s;
+    transition: all 0.3s;
+
 }
 .container{
     width: 95%;
@@ -130,6 +132,18 @@ header{
     margin: auto;  
     padding-top: 25px;
     text-align: center;
+    vertical-align: calc(100% - 50%);
+
+}
+.d-flex-j-center{
+    /* height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
 #counter{

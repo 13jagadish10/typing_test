@@ -18,7 +18,7 @@
             <div class="item flex">
                 <h3 class="link mode">Simple |</h3>
                 <h3 class="link mode">Medium |</h3>
-                <h3 class="link mode">Hard </h3> 
+                <h3 class="link mode">Hard </h3>
             </div>
         </div>
         <hr>
@@ -27,52 +27,66 @@
 
 
 
-<div class="container " id="first">
-    <div>
-        <h2>Welcome to the typing test app <hr></h2><br>
-        <p>Challange yourself with our typing speed test. Measure words per minute, accuracy, and enhance your typing speed in this<br> interactive web application.</p>
-        <br><button class="btn m2" id="starttest">Start the <span>Simple</span> Test</button>
+    <div class="container " id="first">
+        <div>
+            <h2>Welcome to the typing test app
+                <hr>
+            </h2><br>
+            <p>Challange yourself with our typing speed test. Measure words per minute, accuracy, and enhance your
+                typing speed in this<br> interactive web application.</p>
+            <br><button class="btn m2" id="starttest">Start the <span>Simple</span> Test</button>
+        </div>
     </div>
-</div>
 
-<div class="container hide" id="second"><br>
-    <div class="start_timer">
-        <h2>Starting the test ...</h2><br>
-        <h1 id="counter">3</h1>
+    <div class="container hide" id="second"><br>
+        <div class="d-flex-j-center">
+            <div class="start_timer">
+                <h2>Starting the test ...</h2><br>
+                <h1 id="counter">3</h1>
+            </div>
+        </div>
+        <div class="d-flex-j-center">
+            <div class="second_content hide">
+                <div class="top">
+                    <h2 id="timer">
+                        <z id="min">00</z>:<z id="sec">00</z>:<z id="msec">00</z> ss
+                    </h2>
+                </div>
+                <div class="text">
 
+                </div> <br>
+                <textarea class="input" id="typed" spellcheck="false" placeholder="type above text here" cols="30"
+                    rows="10"></textarea>
+                <div class="bottom">
+                    <button class="btn" onclick="window.location.reload()">Back</button>
+                    <button class="btn" id="reset" onclick="window.location.reload()">Reset</button>
+                    <button class="btn" onclick="stop_test()">Stop</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div  class="second_content hide">
-    <div class="top">
-        <h2 id="timer"><z id="min">00</z>:<z id="sec">00</z>:<z id="msec">00</z> ss</h2>
-    </div>
-    <div class="text">
 
-    </div> <br>
-    <textarea class="input" id="typed" spellcheck="false" placeholder="type above text here" cols="30" rows="10"></textarea>
-    <div class="bottom">
-        <button class="btn" onclick="window.location.reload()">Back</button>
-        <button class="btn" id="reset" onclick="window.location.reload()">Reset</button>
-        <button class="btn" onclick="stop_test()">Stop</button>
+    <div class="container hide" id="third">
+        <div>
+            <h2>Result
+                <hr>
+            </h2><br>
+            <p class="green">Your typing speed is : <span>20 </span>wpm</p>
+            <p class="m2 topsent hide">Top speed @ simple mode : <span class="wpmscore"> </span> wpm</p>
+            <p class="topsent hide">Top speed @ medium mode : <span class="wpmscore"> </span> wpm</p>
+            <p class="m2 topsent hide">Top speed @ hard mode : <span class="wpmscore"> </span> wpm</p>
+            <br><button class="btn" onclick="window.location.reload()">Back</button>
+        </div>
     </div>
-</div>
-</div>
-
-<div class="container hide" id="third">
-    <div>
-        <h2>Result<hr></h2><br>
-        <p class="green">Your typing speed is : <span>20 </span>wpm</p>
-        <p class="m2 topsent hide">Top speed @ simple mode : <span class="wpmscore"> </span> wpm</p>
-        <p class="topsent hide">Top speed @ medium mode : <span class="wpmscore"> </span> wpm</p>
-        <p class="m2 topsent hide">Top speed @ hard mode : <span class="wpmscore"> </span> wpm</p>
-        <br><button class="btn" onclick="window.location.reload()">Back</button>
-    </div>
-</div>
 
 
     <hr>
     <footer>
         <div>A project submitted by <code>Bhavesh</code></div>
-        <div><p>Designed by <code>IT Circle</code></p><p>Copyright &copy; 2024 all rights reserved</p></div>
+        <div>
+            <p>Designed by <code>IT Circle</code></p>
+            <p>Copyright &copy; 2024 all rights reserved</p>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>
