@@ -207,4 +207,10 @@ footer{
 .item.flex{
     justify-content: flex-end;  
 } 
+.second_content{
+    width:100%;
+}
+.d-flex-j-center{
+    width:90%;
+}
 }
